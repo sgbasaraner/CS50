@@ -10,7 +10,7 @@ int main(void){
 		printf("%c", toupper(name[0]));
 	}
 
-	for (int i = 0; i < strlen(name); ++i){
+	for (int i = 0, n = strlen(name); i < n; ++i){
 		if (name[i] == ' ' && name[i + 1] != ' '){
 			printf("%c", toupper(name[i + 1]));
 		}
