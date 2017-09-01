@@ -44,7 +44,7 @@ int first_sum(long long n){
             digit_multiplied_digits = second_last_digit(digit_multiplied) + last_digit(digit_multiplied);
         }
         count += digit_multiplied_digits;
-        n = clean_last_two_digits(n)
+        n = clean_last_two_digits(n);
     }
     return count;
 }
@@ -53,7 +53,7 @@ int second_sum(long long n){
     int count = 0;
     while (n > 0){
         count += last_digit(n);
-        n = clean_last_two_digits(n)
+        n = clean_last_two_digits(n);
     }
     return count;
 }
@@ -65,7 +65,7 @@ int last_digit(long long n){
 long long clean_last_two_digits(long long n){
     n = n - (second_last_digit(n) * 10) - last_digit(n);
     n /= 100;
-    return n
+    return n;
 }
 
 int second_last_digit(long long n){

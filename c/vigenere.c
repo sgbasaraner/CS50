@@ -11,11 +11,24 @@ int main(int argc, string argv[]){
 
     if (argc == 2){
         string k = argv[1];
-        printf("plaintext: ");
-        string str = get_string();
-        printf("ciphertext: ");
-        vigenerize(k, str);
-        printf("\n");
+        int check = 1;
+
+        for (int i = 0, n = strlen(k); i < n; ++i){
+            if (!(k[i] >= 'A' && k[i] <= 'z')){
+                check = 0;
+            }
+        }
+
+        if (check == 0){
+            printf("The keyword should consist of alphabetical letters.\n");
+            return 1;
+        } else {
+            printf("plaintext: ");
+            string str = get_string();
+            printf("ciphertext: ");
+            vigenerize(k, str);
+            printf("\n");
+        }
     } else if (argc > 2){
         printf("Usage: ./vigenere k\n");
         return 1;

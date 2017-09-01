@@ -12,7 +12,9 @@ int main(void){
 
 	for (int i = 0, n = strlen(name); i < n; ++i){
 		if (name[i] == ' ' && name[i + 1] != ' '){
-			printf("%c", toupper(name[i + 1]));
+			if (name[i + 1] >= 'A' && name [i + 1] <= 'z'){
+				printf("%c", toupper(name[i + 1]));
+			}
 		}
 	}
 	printf("\n");
