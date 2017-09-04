@@ -1,0 +1,4 @@
+0. all dimensions from 3*3 to 9*9
+1. multidimensional array
+2. printf()
+3. init, draw, move, won
