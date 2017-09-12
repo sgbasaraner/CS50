@@ -1,0 +1,12 @@
+1.  a header file that consists of a set of typedefs that specify exact-width integer types.
+2.  these are signed and unsigned 8, 16 and 32 bit integers. unsigned integers can hold a larger value but they cannot hold any negative values.
+3.  1, 4, 4, 2
+4.  they must be 42 4d
+5.  bfSize denotes the size of the bmp file, biSize denotes the size of the info structure
+6.  it means the bitmap is top-down organized and its origin is the upper-left corner
+7.  biBitCount
+8.  if it is unable to locate or open the file, it'd return NULL
+9.  as we always look for 1 element, nmemb will always be 1
+10. 3
+11. it sets the file position of the stream to the given offset
+12. it denotes the current position of the file pointer
