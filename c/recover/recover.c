@@ -34,7 +34,7 @@ int main(int argc, char *argv[]){
     printf("%lu\n", size);
     rewind(ptr);
     char filename[7];
-    for (int i = 1; (i * 512) < size; ++i){
+    for (int i = 1; (i * 512) < size + 1; ++i){
     	fread(&buffer, 512, 1, ptr);
 
     	// check if it's the start of a new jpg file
